@@ -21,12 +21,6 @@ def init_db():
                     c1 INTEGER, c2 INTEGER, c3 INTEGER, c4 INTEGER, c5 INTEGER,
                     c6 INTEGER, c7 INTEGER, c8 INTEGER, c9 INTEGER
                 )''')
-
-    c.execute('''CREATE TABLE IF NOT EXISTS bobot_kriteria (
-                    username TEXT PRIMARY KEY,
-                    c1 REAL, c2 REAL, c3 REAL, c4 REAL, c5 REAL,
-                    c6 REAL, c7 REAL, c8 REAL, c9 REAL
-                )''')
     conn.commit()
     conn.close()
 
